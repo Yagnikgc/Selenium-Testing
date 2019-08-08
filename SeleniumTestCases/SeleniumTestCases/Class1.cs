@@ -40,6 +40,8 @@ namespace SeleniumTests
         }
 
         [Test]
+        // Test to validate user input data
+        // Check that entered data is empty and give error message
         public void TheSellerNameEmptyTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -47,6 +49,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter Name", driver.FindElement(By.Id("errorName")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that entered data is empty and give error message
         public void TheAddressEmptyTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -54,6 +58,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter Address", driver.FindElement(By.Id("errorAddress")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that entered data is empty and give error message
         public void TheCityNameEmptyTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -61,6 +67,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter City", driver.FindElement(By.Id("errorCity")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that entered data is empty and give error message
         public void ThePhoneNumberEmptyTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -68,6 +76,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter Phone Number", driver.FindElement(By.Id("errorPhone")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that entered data is empty and give error message
         public void TheEmailEmptyTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -75,6 +85,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter E-mail Address", driver.FindElement(By.Id("errorMail")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that entered data is empty and give error message
         public void TheCompanyNameEmptyTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -82,6 +94,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter Company Name", driver.FindElement(By.Id("errorMake")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that entered data is empty and give error message
         public void TheModelNameEmptyTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -89,6 +103,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter Model Name", driver.FindElement(By.Id("errorModel")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that entered data is empty and give error message
         public void TheYearEmptyTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -96,6 +112,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter Year", driver.FindElement(By.Id("errorYear")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that user has entered correct phone number and give error message
         public void ThePhoneNumberInvalidTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -105,6 +123,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter valid Phone Number", driver.FindElement(By.Id("errorPhone")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that user has entered correct email address and give error message
         public void TheEmailInvalidTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -114,6 +134,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter valid E-mail Address", driver.FindElement(By.Id("errorMail")).Text);
         }
         [Test]
+        // Test to validate user input data
+        // Check that user has entered correct year and give error message
         public void TheYearInvalidTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/home.html");
@@ -123,6 +145,8 @@ namespace SeleniumTests
             Assert.AreEqual("Please Enter valid Year", driver.FindElement(By.Id("errorYear")).Text);
         }
         [Test]
+        // Test to validate search box
+        // Check that entered model of car is correct and display all details of that car model
         public void TheSearchByModelTest()
         {
             driver.Navigate().GoToUrl("http://localhost/web/search.html");
