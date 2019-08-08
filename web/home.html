@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Home page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" src="style.css" />
+		<script type="text/javascript" src="validate.js"></script>
+	</head>
+	<body style="background: linear-gradient(to right, #eef2f3, #8e9eab);">
+        <div class="container" style="padding-top: 35px">
+            <div class="row">
+            <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <form>
+                        <h2>Enter vehicle Data</h2>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" class="form-control" placeholder="Seller Name" onblur="if(this.value!='')document.getElementById('errorName').innerHTML = ''" />
+                            <div class="text-danger" id="errorName"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" class="form-control" placeholder="Address" onblur="if(this.value!='')document.getElementById('errorAddress').innerHTML = ''"/>
+                            <div class="text-danger" id="errorAddress"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">City:</label>
+                            <input type="text" id="city" class="form-control" placeholder="City" onblur="if(this.value!='')document.getElementById('errorCity').innerHTML = ''"/>
+                            <div class="text-danger" id="errorCity"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Phone Number (ex:XXX-XXX-XXXX):</label>
+                            <input type="tel" id="phoneNumber" class="form-control" placeholder="Phone Number" onblur="if(this.value!='')document.getElementById('errorPhone').innerHTML = ''"/>
+                            <div class="text-danger" id="errorPhone"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">E-mail:</label>
+                            <input type="text" id="email" class="form-control"  placeholder="Email" onblur="if(this.value!='')document.getElementById('errorMail').innerHTML = ''"/>
+                            <div class="text-danger" id="errorMail"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Company:</label>
+                            <input type="text" id="make" class="form-control" placeholder="Make" onblur="if(this.value!='')document.getElementById('errorMake').innerHTML = ''"/>
+                            <div class="text-danger" id="errorMake"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Model:</label>
+                            <input type="text" id="model" class="form-control" placeholder="Model" onblur="if(this.value!='')document.getElementById('errorModel').innerHTML = ''"/>
+                            <div class="text-danger" id="errorModel"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Year:</label>
+                            <input type="number" id="year" class="form-control" max="2020" placeholder="Year" onblur="if(this.value!='')document.getElementById('errorYear').innerHTML = ''"/>
+                            <div class="text-danger" id="errorYear"></div>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Register" onclick="return validateAll();" id="submit">
+                    </form>
+                    <a href="search.html" > Click here to search by Model. </a>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+	</body>
+</html>
